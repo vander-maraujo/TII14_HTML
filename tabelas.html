@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+</head>
+
+<body>
+    <h1>Trabalhando com tabelas</h1>
+
+    <p>No HTML os dados tabulares são aqueles que podem ser representandos visualmente em forma de tabela</p>
+    <p>A elaboração de uma tabela consiste em uma combinação de linhas e colunas, resultando em uma forma objetiva e
+        ordenada de expor informações.</p>
+
+    <h2> Estrutura simples de uma tabela</h2>
+
+    <!-- Tabela com borda -->
+    <table border="1">
+        <!--  tr= linhas da tabela -->
+        <tr>
+            <!-- td = célula de dados -->
+            <td>Violino</td>
+            <td>Violão</td>
+        </tr>
+        <tr>
+            <td>Gitarra</td>
+            <td>Piano</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Tabela com Título</h2>
+
+    <table border="1">
+        <tr>
+            <!-- Célula de Cabeçalho da coluna -->
+            <th>Instrumento de corda</th>
+            <th>Instrumento de sopro</th>
+        </tr>
+        <tr>
+            <td>Gitarra</td>
+            <td>Corneta</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Flauta</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Título Vertical</h2>
+    <table border="1">
+        <tr>
+            <th>Livros</th>
+            <td>Arte Moderna</td>
+            <td>Programação</td>
+        </tr>
+        <tr>
+            <th>Quantidade</th>
+            <td>500</td>
+            <td>800</td>
+
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Cabeçalho, corpo e rodapé da tabela</h2> 
+    <p>Estes elementos criam seções dentro da tabela que pode receber uma formatação diferenciada, util para formatação de tabelas com muitos dados.</p>
+
+    <table border="1">
+        <caption>Tabela thead/tfoot/tbody</caption> <!--Titulo da Tabela-->
+        <thead> <!--Cabeçalho da tabela, agrupamento semântico-->
+            <tr>
+                <th colpan="2">coluna 1</th> <!--Mescla 2 colunas-->
+                <th>Coluna 2</th>
+
+
+            </tr>
+        </thead>
+    <tfoot> <!--Rodapé da tabela, útil para totais e observações--> 
+        <tr>
+            <td>Resultado 1</td>
+            <td>Resultado 2</td>
+            <td>Resultado 3</td>
+                   
+            
+        </tr>
+    </tfoot>
+
+    <tbody> <!--Corpo da Tabela com dados principais-->
+        <tr>
+            <td rowspan="2"> Conteúdo A</td> <!--Mesclar a célula Vertical (duas linhas)-->
+            <td>Conteúdo B</td>
+            <td>Conteúdo C</td>
+        
+        </tr>
+        <tr>
+
+            <!-- <td>Conteudo D</td>-->
+             <td>Conteudo E</td>
+             <td>Conteudo F</td>
+
+        </tr>
+
+        <tr>
+            <td>Conteudo G</td>
+            <td>Conteudo H</td>
+            <td>Conteudo I</td>
+            
+        </tr>
+    </tbody>
+    
+    </table>
+</body>
+
+</html>
