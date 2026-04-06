@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de ID e Class</title>
+    <style>
+        /*Seletor de UD: Unico - aplica o estilo ao elemento único com o "id=unico"*/
+        #unico {
+            height: 30px; /*Altura de 30px (px= pixels)*/
+            width: 150px; /*Largura de 150 px*/
+            background-color: yellow; /*Cor de fundo*/
+            padding: 5px /*Espaçamento interno: 5px em todos os lados*/;
+
+        }
+
+        /*Seletor de classe> .categoria - aplica estilos a elementos com class="categoria*/
+        .categoria {
+            height: 50px; /*Altura*/
+            width: 300px; /*Largura*/
+            background-color: blue; /*Cor do fundo*/
+            padding: 5px; /*Espaçamento interno*/
+            color: white; /*Cor do texto*/
+        }
+
+        /*Seletor ID:#meio aplicar estilos a um elemento único="meio"*/
+        #meio {
+            width: 500px; /*Largura*/
+            background-color: cadetblue; /*cor de fundo*/
+        }
+
+        .arredondamento {
+            border-radius: 10px; /*Arredonda as bordas: raio de 10px*/
+            border-bottom: solid 3px red; /*Bordas inferior: sólida, 3 pixels de espessura, vermelha.*/ 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com ID e classes</h1>
+    <hr>
+    <h2>Seletores de ID</h2>
+
+    <p class="arredondamento">É usado um seletor de id em um elemento HTML para deixar ele único e específico.</p>
+    <p>Deve ser usado uma única vez na página</p>
+    <p id="unico" class="arredondamento">Usando um ID</p>
+
+    <hr>
+
+    <h2>Seletores de Classe</h2>
+    <p>O seletor classe seleciona elementos com um atributo de classe especifica</p>
+    <p>Pode ser usado mais de uma vez na página</p>
+    <h3>Exemplo:</h3>
+    <p class="categoria arredondamento">Usando uma Classe</p>
+    <p class="categoria" id="meio">Usando uma Classe</p>
+    <p class="categoria">Usando uma Classe</p>
+</body>
+</html>
