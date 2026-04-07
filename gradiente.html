@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="utf-8">
+      <title>Gradientes</title>  
+      <style>
+        /*Gradiente linear básicos: transição vertical de cima (vermelho) para baixo (amarelo)*/
+        #gradl {
+            background-image: linear-gradient(red,yellow); /*define a imagem de fundo como gradiente lenar vermelho para amarelo*/
+            height: 100px;
+            color: white;
+            padding: 10px;
+        }
+
+        /*Gradiente linear horizontal: Transição da esquerda para direita*/
+
+        #gradle {
+            background-image: linear-gradient(to right, red, yellow); /*Gradiente linear na direção horizontal (esqueda para direita)*/
+            height: 100px;
+            color: white;
+            padding: 10px;
+        }
+
+        /*Gradiente linear diagonal: transição da esqeurda-cima para direita-baixo*/
+        
+        #gradld {
+            background-image: linear-gradient(to bottom right, red, yellow); /*Gradiente linear na direção diagonal cima-esquerda para baixo-direita*/
+            height: 100px;
+            color: white;
+            padding: 10px;
+            }
+
+            /*Gradiente linear com multiplas cores: azul para vermellho para amarelo*/
+
+            #gradlm {
+            background-image: linear-gradient(Blue, red, yellow); /*Gradiente vertical com 3 cores*/
+            height: 100px;
+            color: white;
+            padding: 10px;
+
+        }
+
+        /*Gradiente linear com transparencia: azul solido (opacidade 1) e vermelho transparente (opacidade 0.3)*/
+
+        #gradlt {
+            background-image: linear-gradient(to right, rgba(0,0,255,1), rgba(255,0,0,0.3)); /**/
+            height: 100px;
+            color: white;
+            padding: 10px;
+        }
+            
+        /*Gradiente radical: Irradia do centro para fora (verde para o vermelho para o amarelo*/
+
+        #gradr {
+            background-image: radial-gradient(Green, red, yellow); /*Gradiente radical que irradia do centro para as bordas com 3 cores*/
+            height: 100px;
+            color: white;
+            padding: 10px;           
+            
+           
+        }
+        
+
+      </style>
+  </head>  
+    <body>
+        
+    <h1>Trabalando com Cores Gradientes </h1>   
+     <hr>
+    <p>Os gradientes CSS permitem exibir transições suaves entre duas ou mais cores especificadas. </p>
+    
+     <p>CSS define dois tipos de gradientes:</p>
+        
+    <ul>
+        <li><b>Gradientes Lineares</b> (desce / sobe / esquerda / direita / diagonalmente)</li>
+        <li><b>Gradientes radiais</b> (definidos pelo centro)</li>
+        
+    </ul>
+         <hr>
+         
+        <h2>Gradientes Lineares (Desce e Sobe)</h2> 
+        
+        <p>Para criar um gradiente linear, você deve definir pelo menos duas cores. Podemos também definir um ponto de partida e uma direção (ou um ângulo) junto com o efeito de gradiente.</p>
+         
+         <p id="gradl">Exemplo de Gradiente Linear - Desce e sobe</p>
+         <hr>
+         <h2>Gradientes Lineares (Esquerda para direita)</h2> 
+         
+         <p id="gradle">Exemplo de Gradiente Linear - da esquerda para direita</p>
+         <hr>
+         <h2>Gradientes Lineares (Diagonal)</h2> 
+         
+         <p id="gradld" >Exemplo de Gradiente Linear - diagonal</p>
+         <hr>
+         <h2>Gradientes Lineares (Multiplas cores)</h2> 
+         
+         <p id="gradlm">Exemplo de Gradiente Linear - Multiplas cores</p>
+         <hr>
+         <h2>Gradientes Lineares (Com transparência)</h2> 
+         
+         <p id="gradlt">Exemplo de Gradiente Linear - com transparência</p>
+         <hr>
+         
+         <h2>Gradientes Radiais </h2> 
+        
+        <p>Para criar um gradiente radial, você deve definir pelo menos duas cores. A definição é feita pelo centro.</p>
+         
+         <p id="gradr">Exemplo de Gradiente Radial</p>
+         <hr> 
+    </body>
+
+</html>

@@ -12,6 +12,7 @@
 
     <!--Importando a fonte playwrite no do google Fonts para uso na página-->
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+
         <title>Exemplos de CSS</title>
 
     <style>
@@ -21,8 +22,79 @@
             padding: 0; /*sem espaçamento interno no body*/
             background-color: #f5deb3; /*Cor do fundo de base da página*/
             background-image: url(img/textura01.jpg); /*imagem de fundo carregada da pasta img*/
+            font-family: Arial, Helvetica, sans-serif; /*Fonte reserva, caso não carregue a font importada*/
+            font-family: "playwrite NO", cursive; /*Font importada do goolge fonts usada como principal*/
+            font-optical-sizing: auto; /*ajuste de renderização da font para melhor legibilidade*/
+            font-style: normal; /*estilo normal, sem itálico*/
+            }
 
-        }
+            /*Estilo do titulo principal*/
+
+            h1 {
+                background-color: black; /*cor do fundo do titulo*/
+                color: white; /*do texto dentro do titulo*/
+                text-align: center; /*Alinha texto ao centro*/
+                padding: 20px; /*Espaçamento interno ao redor do conteúdo*/
+                border-radius: 15px;
+                border-bottom: solid red 5px; /*Borda inferior vermelha e grossa*/            
+            }
+            /*Estilizar a linha orizontal*/
+            hr {
+                width: 70%; /*largura da linha em percentual do elemento pai, no caso o <body>*/
+                height: 15px;
+                background-color: purple; /*cor do preenchimento da linha*/
+                border: none; /*remove a barra padrão do hr*/
+                border-radius: 5px; /*arredonda as extremidades da linha*/
+                border-bottom: solid; rgb(255, 232, 11); /*Borda inferior amarela*/
+            }
+
+            h2 {
+                border-bottom-style: solid; /*estilo de borda inferior*/
+                border-bottom-color: red; /*cor da borda inferior*/
+                border-bottom-width: 5px; /*espessura da borda inferior*/
+                display: inline; /*exibir o titulo na mesma linha, sem quebrar linha automaticamente*/
+                padding-bottom: 8px; /*espaçamento entre o texto e a borda inferior*/
+                color: white; /*cor do texto do subtitulo*/
+                text-shadow: black 2px 2px 5px, red 
+                -2px -2px 5px; /*sombra de texto com dois efeitos*/
+                margin: 20px; /*espaçamento esterno ao redor do titulo*/
+                text-transform: lowercase; /*força o texto a ficar minusculo*/
+
+                /*Estilo para todos os parágrafos*/
+
+                
+                }
+
+                p {
+                    margin-top: 10px; /*Espaçamento a cima do parágrafo*/
+                    margin-bottom: 10px; /*espaçamento abaixo do paragrafo*/
+                    font-size: 18px; /*tamanho da fonte do texto*/
+                    word-spacing: 10px; /*espaçamento entre as palavras*/
+                    letter-spacing: 3px; /*espaçamento entre as letras*/
+                    text-align: justify; /*justifica o texto nas duas margens*/
+                }
+                
+                /*Estilos do container div que envolve a lista*/
+
+                div {
+                    align-items: center; /*só funciona com display: flex; não tem efeito por enquanto*/
+                    justify-content: center; /*só funciona com display: flex; não tem efeito por enquanto*/
+                    width: 670px; /*largura fixa para o container*/
+                    margin-left: 280px; /*desloca o container para direita*/
+                }
+            
+                /*Estilizar dos itens da lista*/
+                li {
+                    list-style: square; /*marcador em forma de quadrado*/
+                    background-color: #ffa500; /*cor do fundo*/
+                    width: 21%; /*largura do item da lista*/
+                }
+
+                /*Estilo para imagens*/
+
+                img {
+                    border-radius: 20px; /*arredonda os cantos da imagens*/
+                }
     </style>
    
 </head>
