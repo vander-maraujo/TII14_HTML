@@ -1,0 +1,55 @@
+*{
+    margin: 0; /*zerando a margem*/
+    padding: 0; /*zerando os espaçamentos*/
+    box-sizing: border-box; /*faz a largura e altera incluirem paddin e borda*/
+}
+/*Estilo do corpo da página*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    line-height: 1.6; /*Espaçamento (altura) entre as linhas*/
+}
+
+/*Topo da página (header)*/ 
+.topo {
+    background: linear-gradient(135deg, #6a0dad, #9c27b0); /*"deg, significa o degradê das cores*/
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.topo h1 {
+    margin-bottom: 10px;
+    font-size: 2.2rem; /*tamanho da fonte*/
+}
+
+.topo p {
+    font-size: 1rem;
+}
+
+/*container principal*/
+
+.container {
+    width: 90%;
+    max-width: 1000px; /*limite maximo da tela*/
+    margin: 30px auto; /*centralizar orizontalmente*/
+}
+
+/*blocos de conteúdos*/
+
+.bloco {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); /*sombra da borda dos cards*/
+}
+
+.bloco h2 {
+    margin-top: 10px;
+    color: #6a0dad;
+    }
+
+.bloco p {
+    margin-bottom: 20px;
+}
