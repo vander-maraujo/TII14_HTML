@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array e Matriz</title>
+</head>
+<body>
+    <script>
+        // O que é array
+
+        // Um array é uma estrutura de dados que permite armazenar multiplos valores em única variavel. Em JavaScript, arrays são objetos especiais que armazenam elementos de forma indexada, começando do índice 0.
+
+        let frutas = ['Maca', 'Banana', 'Uva', 'Laranja'];
+        console.log(frutas[2])
+
+        let nomes = new Array('Diego', 'João', 'Maria', 'Romeu', 'Julietta');
+        console.log(nomes[2]);
+                                 //Indices
+        let misto = [1,             // 0
+                    'Jhenny',       // 1
+                    true,           // 2
+                    {nome:'Diego'}, // 3
+                    [5,3,6]];       // 4 - [5(0), 3(1), 6(2)]
+
+        console.log(misto[3]['nome']);
+
+        console.log(misto[2]);
+
+        console.log(misto[4][1])
+
+        let Matriz = [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ];
+        console.log(Matriz)
+
+        console.log('------------');
+        numeros = [2,6,9,5,6,26];
+
+        console.log(numeros.length); 
+
+        let texto = 'Olá mundo!';
+        console.log(texto[6])
+        console.log(texto.length); //(length) - conta quantidade total de caracteres dentro de um array
+
+        for(i = 0;i < texto.length; i++){
+            console.log(texto[i])
+        
+            if (texto[i] == '!') {
+                console.log ('Posição' +i +1) 
+            }
+
+        }
+
+        console.log('----------------')
+        textocompleto = ""
+        for (i = 0; i < texto.length; i++) {
+            letra = texto [i];
+            textocompleto += letra
+        }
+
+        console.log(textocompleto)
+
+        // preencher um array
+        //usuário escolher a quantidade de posições do array
+        let tamanho = prompt ("Quantos elementos você deseja no array?");
+        tamanho = Number(tamanho);
+
+        let array1 = [];
+
+        for(i=0; i < tamanho; i++){
+            //Pedir para o usuário preencher o array
+            //alert(`Posição + i`)
+            entrada = prompt (`Digite o valor para o índice ${i}:`)
+
+            console.log(entrada)
+            array1[i] = entrada    
+            
+        }
+         console.log(array1)
+
+    </script>
+    
+</body>
+</html>
